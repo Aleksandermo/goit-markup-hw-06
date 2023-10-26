@@ -378,6 +378,23 @@
           </li>
         </ul>
       </div>
+
+      <div>
+        <form class="subscribe-email-position" autocomplete="off" method="POST" action="javascript:void(0);">
+          <label class="social-filter">Subscribe</label>
+          <div class="social-media subscribe-box">
+            <label>
+              <input class="email-frame" type="text" name="email" placeholder="E-mail" />
+            </label>
+            <button class="filter-subscribe-button filter-last-button subscribe-icon" type="submit">Subscribe
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
     </div>
   </footer>
 
@@ -391,7 +408,41 @@
         </svg>
       </button>
 
+      <div class="form-position">
+        <form class="form">
+
+          <fieldset class="form-group">
+            <legend class="group-legend group-title">Leave your contacts and we will call you back</legend>
+            <label class="form-label">
+              Name
+              <input type="text" name="username" />
+            </label>
+            <label class="form-label">
+              Phone
+              <input type="tel" name="phone" />
+            </label>
+            <label class="form-label">
+              Email
+              <input type="email" name="email" />
+            </label>
+            <label class="form-label">
+              Comment
+              <input class="form-label-comment" type="text" name="comment" placeholder="Text input" />
+            </label>
+          </fieldset>
+
+          <fieldset class="form-group-check">
+            <div class="form-field">
+              <input type="checkbox" name="acceptance" value="acceptance" id="terms">
+              <label class="form-label accept-filter" for="terms">I accept the terms and conditions of the Privacy
+                Policy</label>
+            </div>
+          </fieldset>
+          <button data-modal-open type="button" class="filter-single-button filter-first-button">Send</button>
+        </form>
+      </div>
     </div>
+
   </div>
 
   <script src="./js/modal.js"></script>
