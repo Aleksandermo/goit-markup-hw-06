@@ -640,21 +640,18 @@ ol {
 .subscribe-box {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
-  gap: 16px;
 }
 .subscribe-icon {
   display: flex;
   justify-content: center;
   padding: 8px 0;
-  gap: 16px;
 }
 .email-frame {
   padding-left: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
   display: block;
-  min-width: 264px;
+  width: 264px;
   height: 40px;
   border: 1px solid var(--white);
   border-radius: 4px;
@@ -664,6 +661,10 @@ ol {
   transition: box-shadow;
   transition-duration: var(--tr-duration);
   transition-timing-function: var(--tr-fn);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: 2;
 }
 .email-frame::placeholder {
   font-family: "Roboto", sans-serif;
@@ -755,4 +756,7 @@ ol {
   display: flex;
   justify-content: center;
   padding-top: 72px;
+}
+.icon-subscribe {
+  margin-left: 16px;
 }
