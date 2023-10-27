@@ -742,13 +742,6 @@ ol {
 .form-label-comment:hover {
   border-color: var(--iris);
 }
-.accept-filter {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: var(--lightslate);
-}
 .form-field {
   display: flex;
   align-items: center;
@@ -790,4 +783,25 @@ ol {
 }
 .comment-container {
   margin-bottom: 16px;
+}
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color, border, fill;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-fn);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.visually-hidden:checked .checkbox-icon {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+.privacy-policy {
+  color: var(--iris);
 }
