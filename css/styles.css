@@ -540,6 +540,7 @@ ol {
     skew(40deg, 40deg);
 }
 .modal-body {
+  padding: 72px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -627,6 +628,7 @@ ol {
   transition: background-color;
   transition-duration: var(--tr-duration);
   transition-timing-function: var(--tr-fn);
+  align-items: center;
 }
 .filter-last-button {
   display: block;
@@ -657,23 +659,20 @@ ol {
   border-radius: 4px;
   cursor: pointer;
   margin: 0 auto;
-  background-color: var(--studio);
+  background-color: transparent;
   transition: box-shadow;
   transition-duration: var(--tr-duration);
   transition-timing-function: var(--tr-fn);
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.04em;
-  line-height: 2;
+  line-height: 1.5;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white);
 }
 .email-frame::placeholder {
-  font-family: "Roboto", sans-serif;
   color: var(--white);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  line-height: 2;
 }
 .email-frame:hover,
 .email-frame:focus {
@@ -681,12 +680,6 @@ ol {
 }
 .subscribe-email-position {
   padding-left: 80px;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 360px;
 }
 .form-group {
   display: flex;
@@ -704,13 +697,10 @@ ol {
   border: none;
   padding-bottom: 24px;
 }
-.group-legend {
-  display: flex;
-  justify-content: center;
-  width: 360px;
-  padding-bottom: 16px;
-}
+
 .group-title {
+  text-align: center;
+  padding-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -718,20 +708,27 @@ ol {
   color: var(--studio);
 }
 .form-label {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 4px;
+  display: block;
+
   cursor: pointer;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--lightslate);
 }
 .form-label-comment {
-  cursor: pointer;
-  justify-content: flex-start;
-  align-items: flex-start;
+  width: 100%;
   height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-fn);
 }
 .form-label-comment::placeholder {
   font-weight: 400;
@@ -752,11 +749,38 @@ ol {
   align-items: center;
   gap: 4px;
 }
-.form-position {
-  display: flex;
-  justify-content: center;
-  padding-top: 72px;
-}
 .icon-subscribe {
   margin-left: 16px;
+}
+.gap-filter {
+  position: relative;
+}
+.input-style {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-fn);
+}
+.input-style:focus {
+  border-color: var(--iris);
+}
+.icon-form {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-fn);
+}
+.input-style .icon-form {
+  fill: var(--iris);
+}
+.comment-container {
+  margin-bottom: 16px;
 }
