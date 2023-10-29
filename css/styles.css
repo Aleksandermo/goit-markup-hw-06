@@ -770,6 +770,9 @@ ol {
 .input-style:focus {
   border-color: var(--iris);
 }
+.input-style:focus + .icon-form {
+  fill: var(--iris);
+}
 .icon-form {
   position: absolute;
   top: 50%;
@@ -780,9 +783,6 @@ ol {
   transition-duration: var(--tr-duration);
   transition-timing-function: var(--tr-fn);
 }
-.input-style:hover .icon-form {
-  fill: var(--iris);
-}
 .comment-container {
   margin-bottom: 16px;
 }
@@ -791,6 +791,7 @@ ol {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  background-color: var(--white);
   transition: background-color, border, fill;
   transition-duration: var(--tr-duration);
   transition-timing-function: var(--tr-fn);
@@ -799,7 +800,7 @@ ol {
   justify-content: center;
   fill: transparent;
 }
-input [type="checkbox"] {
+.check-this:checked + .form-label span {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
