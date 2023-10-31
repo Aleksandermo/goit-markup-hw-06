@@ -707,15 +707,6 @@ ol {
   letter-spacing: 0.02em;
   color: var(--studio);
 }
-.form-label {
-  margin-bottom: 4px;
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--lightslate);
-}
 .form-label-comment {
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -738,6 +729,15 @@ ol {
   line-height: 14px;
   letter-spacing: 0.04em;
   color: var(--placeholder);
+}
+.form-label {
+  margin-bottom: 4px;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--lightslate);
 }
 .form-label-comment:hover,
 .form-label-comment:focus {
@@ -787,6 +787,7 @@ ol {
   margin-bottom: 16px;
 }
 .checkbox {
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -807,4 +808,9 @@ ol {
 }
 .privacy-policy {
   color: var(--iris);
+}
+.label-position {
+  position: absolute;
+  left: 0;
+  margin-left: 24px;
 }

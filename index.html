@@ -384,7 +384,7 @@
         <form class="box-position" autocomplete="off" method="POST" action="javascript:void(0);">
 
           <label class="social-media subscribe-box">
-            <input class="email-frame" type="email" name="email" placeholder="E-mail" />
+            <input class="email-frame" type="email" name="email" placeholder="E-mail" required />
           </label>
 
           <button class="filter-subscribe-button filter-last-button subscribe-icon" type="submit">Subscribe
@@ -417,7 +417,7 @@
             Name
           </label>
           <div class="gap-filter">
-            <input class="input-style" id="user-name" type="text" name="user-name" />
+            <input class="input-style" id="user-name" type="text" name="user-name" required />
             <svg class="icon-form" width="18" height="24">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
@@ -428,7 +428,7 @@
             Phone
           </label>
           <div class="gap-filter">
-            <input class="input-style" id="user-phone" type="text" name="user-phone" />
+            <input class="input-style" id="user-phone" type="text" name="user-phone" required />
             <svg class="icon-form" width="18" height="24">
               <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
             </svg>
@@ -439,36 +439,34 @@
             Email
           </label>
           <div class="gap-filter">
-            <input class="input-style" id="user-email" type="text" name="user-name" />
+            <input class="input-style" id="user-email" type="text" name="user-name" required />
             <svg class="icon-form" width="18" height="24">
               <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
           </div>
         </div>
         <div class="comment-container form-group form-label">
-          <label class="form-label" for="user-comment">
-            Comment
-          </label>
-          <textarea class="form-label-comment" id="user-comment" name="user-comment" placeholder="Text input">
-            </textarea>
+          <label class="form-label" for="user-comment">Comment
+          </label><textarea class="form-label-comment" id="user-comment" name="user-comment"
+            placeholder="Text input"></textarea>
         </div>
 
         <div class="form-group-check form-field">
-          <input class="visually-hidden check-this" type="checkbox" name="user-privacy" value="true" id="user-privacy">
+          <input class="visually-hidden check-this" type="checkbox" name="user-privacy" value="true" id="user-privacy"
+            required>
 
-          <label class="form-label" for="user-privacy">
+          <label class="form-label label-position" for="user-privacy">
             <span class="checkbox">
               <svg width="10" height="8">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
-            </span>
-            I accept the terms and conditions of the
+            </span>I accept the terms and conditions of the
             <a href="" class="privacy-policy">Privacy Policy</a>
           </label>
 
         </div>
 
-        <button data-modal-open type="button" class="filter-single-button filter-first-button">Send</button>
+        <button data-modal-open type="submit" class="filter-single-button filter-first-button">Send</button>
       </form>
     </div>
 
