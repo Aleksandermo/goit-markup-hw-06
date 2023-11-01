@@ -685,7 +685,6 @@ ol {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
   border: none;
   margin-bottom: 8px;
 }
@@ -813,4 +812,9 @@ ol {
   position: absolute;
   left: 0;
   margin-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.label-distance {
+  margin-top: 40px;
 }
